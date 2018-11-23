@@ -10,15 +10,160 @@
     <meta name="author" content="Kameron Ahler" />
     <meta name="robots" content="noindex" />
     <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css?family=Archivo:400,500,600,700|Arimo:400,500,600,700|Heebo:400,500,600,700|Hind:400,500,600,700|IBM+Plex+Sans:400,500,600,700|Khula:400,500,600,700|Lato:400,500,600,700|Montserrat:400,500,600,700|Muli:400,500,600,700|Nanum+Gothic:400,500,600,700|Noto+Sans:400,500,600,700|Noto+Sans+SC:400,500,600,700|Nunito:400,500,600,700|Open+Sans:400,500,600,700|Oxygen:400,500,600,700|Poppins:400,500,600,700|Questrial:400,500,600,700|Roboto:400,500,600,700|Varela+Round:400,500,600,700"> 
+    
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+    <header role="banner">
+        <header>
+            <h1>Font Test</h1>
+        </header>        
+    </header>
     <main>
+        <nav role="navigation">
+            <form id="font-picker-headings" class="font-picker font-picker--headings">
+                <header>
+                    <h2>Headings</h2>
+                </header>
+                <fieldset class="weight-picker">
+                    <label for="weight-picker-headings">Weight</label>
+                    <select name="weight-picker-headings" id="weight-picker-headings">
+                        <option value="400">Normal</option>
+                        <option value="500">Medium</option>
+                        <option value="600">Semi-bold</option>
+                        <option value="700" selected="selected">Bold</option>
+                    </select>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading1" value="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';" type="radio" checked="checked">
+                    <label for="font-picker-heading1">System</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading2" value="Archivo" type="radio">
+                    <label for="font-picker-heading2">Archivo</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading3" value="Arimo" type="radio">
+                    <label for="font-picker-heading3">Arimo</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading4" value="Heebo" type="radio">
+                    <label for="font-picker-heading4">Heebo</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading5" value="Hind" type="radio">
+                    <label for="font-picker-heading5">Hind</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading6" value="IBM Plex Sans" type="radio">
+                    <label for="font-picker-heading6">IBM Plex Sans</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading7" value="Khula" type="radio">
+                    <label for="font-picker-heading7">Khula</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading8" value="Lato" type="radio">
+                    <label for="font-picker-heading8">Lato</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading9" value="Montserrat" type="radio">
+                    <label for="font-picker-heading9">Montserrat</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading10" value="Muli" type="radio">
+                    <label for="font-picker-heading10">Muli</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading11" value="Nanum Gothic" type="radio">
+                    <label for="font-picker-heading11">Nanum Gothic</label>
+                </fieldset> 
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading12" value="Noto Sans" type="radio">
+                    <label for="font-picker-heading12">Noto Sans</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading13" value="Noto Sans SC" type="radio">
+                    <label for="font-picker-heading13">Noto Sans SC</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading14" value="Nunito" type="radio">
+                    <label for="font-picker-heading14">Nunito</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading15" value="Open Sans" type="radio">
+                    <label for="font-picker-heading15">Open Sans</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading16" value="Oxygen" type="radio">
+                    <label for="font-picker-heading16">Oxygen</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading17" value="Poppins" type="radio">
+                    <label for="font-picker-heading17">Poppins</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading18" value="Questrial" type="radio">
+                    <label for="font-picker-heading18">Questrial</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading19" value="Roboto" type="radio">
+                    <label for="font-picker-heading19">Roboto</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-headings" id="font-picker-heading20" value="Varela Round" type="radio">
+                    <label for="font-picker-heading20">Varela Round</label>
+                </fieldset>
+            </form>
+            <form id="font-picker-labels" class="font-picker font-picker--labels">
+                <header>
+                    <h2>Labels</h2>
+                </header>
+                <fieldset class="weight-picker">
+                    <label for="weight-picker-labels">Weight</label>
+                    <select name="weight-picker-labels" id="weight-picker-labels">
+                        <option value="400">Normal</option>
+                        <option value="500">Medium</option>
+                        <option value="600">Semi-bold</option>
+                        <option value="700" selected="selected">Bold</option>
+                    </select>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-labels" id="font-picker-label1" value="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';" type="radio" checked="checked">
+                    <label for="font-picker-label1">System</label>
+                </fieldset>
+                <fieldset class="font-picker">
+                    <input name="font-picker-labels" id="font-picker-label2" value="Montserrat" type="radio">
+                    <label for="font-picker-label2">Montserrat</label>
+                </fieldset>
+            </form>
+            <form id="font-picker-body" class="font-picker font-picker--body">
+                <header>
+                    <h2>Body</h2>
+                </header>
+                <fieldset class="weight-picker__input">
+                    <label for="weight-picker-body">Weight</label>
+                    <select name="weight-picker-body" id="weight-picker-body">
+                        <option value="400" selected="selected">Normal</option>
+                        <option value="500">Medium</option>
+                        <option value="600">Semi-bold</option>
+                        <option value="700">Bold</option>
+                    </select>
+                </fieldset>
+                <fieldset class="font-picker__inputs">
+                    <input name="font-picker-body" id="font-picker-body1" value="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';" type="radio" checked="checked">
+                    <label for="font-picker-body1">System</label>
+                </fieldset>
+                <fieldset class="font-picker__inputs">
+                    <input name="font-picker-body" id="font-picker-body2" value="Montserrat" type="radio">
+                    <label for="font-picker-body2">Montserrat</label>
+                </fieldset>
+            </form>
+        </nav>
         <section class="example">
-            <header class="example__header">
-                <h2>Text Examples</h2>
-            </header>
             <section class="example__typography">
                 <h1>The quick brown fox</h1>
                 <h2>The quick brown fox</h2>
