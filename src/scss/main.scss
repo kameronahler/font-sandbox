@@ -4,11 +4,10 @@ Project Specific
 
 =========================== */
 // imports here...
-@import "partials/css-variables";
-@import "partials/base/normalize";
-@import "partials/global";
-@import "partials/text-examples";
+@import "partials/variables";
+@import "partials/normalize";
+@import "partials/base";
 
 
 // Boilerplate Print Styles -- LAST
-@import "partials/base/print";
+@import "partials/print";
