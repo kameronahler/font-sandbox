@@ -11,160 +11,316 @@
     <meta name="robots" content="noindex" />
     <title></title>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css?family=Archivo:400,500,600,700|Arimo:400,500,600,700|Heebo:400,500,600,700|Hind:400,500,600,700|IBM+Plex+Sans:400,500,600,700|Khula:400,500,600,700|Lato:400,500,600,700|Montserrat:400,500,600,700|Muli:400,500,600,700|Nanum+Gothic:400,500,600,700|Noto+Sans:400,500,600,700|Noto+Sans+SC:400,500,600,700|Nunito:400,500,600,700|Open+Sans:400,500,600,700|Oxygen:400,500,600,700|Poppins:400,500,600,700|Questrial:400,500,600,700|Roboto:400,500,600,700|Varela+Round:400,500,600,700"> 
-    
+    <link rel="stylesheet" crossorigin href="https://fonts.googleapis.com/css?family=Archivo:400,500,600,700|Arimo:400,500,600,700|Heebo:400,500,600,700|Hind:400,500,600,700|IBM+Plex+Sans:400,500,600,700|Khula:400,500,600,700|Lato:400,500,600,700|Montserrat:400,500,600,700|Muli:400,500,600,700|Nanum+Gothic:400,500,600,700|Noto+Sans:400,500,600,700|Noto+Sans+SC:400,500,600,700|Nunito:400,500,600,700|Open+Sans:400,500,600,700|Oxygen:400,500,600,700|Poppins:400,500,600,700|Questrial:400,500,600,700|Roboto:400,500,600,700|Varela+Round:400,500,600,700">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <header role="banner">
-        <header>
-            <h1>Font Test</h1>
-        </header>        
-    </header>
-    <main>
+    <header role="banner" class="site-banner">
+        <h1>Font Test</h1>
         <nav role="navigation">
-            <form id="font-picker-headings" class="font-picker font-picker--headings">
+            <form id="option-picker-headings" class="option-picker option-picker--headings">
                 <header>
-                    <h2>Headings</h2>
+                    <h2>Heading Options</h2>
                 </header>
-                <fieldset class="weight-picker">
-                    <label for="weight-picker-headings">Weight</label>
-                    <select name="weight-picker-headings" id="weight-picker-headings">
-                        <option value="400">Normal</option>
-                        <option value="500">Medium</option>
-                        <option value="600">Semi-bold</option>
-                        <option value="700" selected="selected">Bold</option>
-                    </select>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading1" value="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';" type="radio" checked="checked">
-                    <label for="font-picker-heading1">System</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading2" value="Archivo" type="radio">
-                    <label for="font-picker-heading2">Archivo</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading3" value="Arimo" type="radio">
-                    <label for="font-picker-heading3">Arimo</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading4" value="Heebo" type="radio">
-                    <label for="font-picker-heading4">Heebo</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading5" value="Hind" type="radio">
-                    <label for="font-picker-heading5">Hind</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading6" value="IBM Plex Sans" type="radio">
-                    <label for="font-picker-heading6">IBM Plex Sans</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading7" value="Khula" type="radio">
-                    <label for="font-picker-heading7">Khula</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading8" value="Lato" type="radio">
-                    <label for="font-picker-heading8">Lato</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading9" value="Montserrat" type="radio">
-                    <label for="font-picker-heading9">Montserrat</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading10" value="Muli" type="radio">
-                    <label for="font-picker-heading10">Muli</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading11" value="Nanum Gothic" type="radio">
-                    <label for="font-picker-heading11">Nanum Gothic</label>
-                </fieldset> 
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading12" value="Noto Sans" type="radio">
-                    <label for="font-picker-heading12">Noto Sans</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading13" value="Noto Sans SC" type="radio">
-                    <label for="font-picker-heading13">Noto Sans SC</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading14" value="Nunito" type="radio">
-                    <label for="font-picker-heading14">Nunito</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading15" value="Open Sans" type="radio">
-                    <label for="font-picker-heading15">Open Sans</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading16" value="Oxygen" type="radio">
-                    <label for="font-picker-heading16">Oxygen</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading17" value="Poppins" type="radio">
-                    <label for="font-picker-heading17">Poppins</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading18" value="Questrial" type="radio">
-                    <label for="font-picker-heading18">Questrial</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading19" value="Roboto" type="radio">
-                    <label for="font-picker-heading19">Roboto</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-headings" id="font-picker-heading20" value="Varela Round" type="radio">
-                    <label for="font-picker-heading20">Varela Round</label>
-                </fieldset>
+                <section class="option-wrapper option-wrapper--weight">
+                    <fieldset class="option-group option-group--weight">
+                        <label for="weight-headings">Weight</label>
+                        <select name="weight-headings" id="weight-headings">
+                            <option value="400">Normal</option>
+                            <option value="500">Medium</option>
+                            <option value="600">Semi-bold</option>
+                            <option value="700" selected="selected">Bold</option>
+                        </select>
+                    </fieldset>
+                </section>
+                <section class="option-wrapper option-wrapper--font">
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading1" value="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';" type="radio" checked="checked">
+                        <label for="font-heading1">System</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading2" value="Archivo" type="radio">
+                        <label for="font-heading2">Archivo</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading3" value="Arimo" type="radio">
+                        <label for="font-heading3">Arimo</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading4" value="Heebo" type="radio">
+                        <label for="font-heading4">Heebo</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading5" value="Hind" type="radio">
+                        <label for="font-heading5">Hind</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading6" value="IBM Plex Sans" type="radio">
+                        <label for="font-heading6">IBM Plex Sans</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading7" value="Khula" type="radio">
+                        <label for="font-heading7">Khula</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading8" value="Lato" type="radio">
+                        <label for="font-heading8">Lato</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading9" value="Montserrat" type="radio">
+                        <label for="font-heading9">Montserrat</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading10" value="Muli" type="radio">
+                        <label for="font-heading10">Muli</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading11" value="Nanum Gothic" type="radio">
+                        <label for="font-heading11">Nanum Gothic</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading12" value="Noto Sans" type="radio">
+                        <label for="font-heading12">Noto Sans</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading13" value="Noto Sans SC" type="radio">
+                        <label for="font-heading13">Noto Sans SC</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading14" value="Nunito" type="radio">
+                        <label for="font-heading14">Nunito</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading15" value="Open Sans" type="radio">
+                        <label for="font-heading15">Open Sans</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading16" value="Oxygen" type="radio">
+                        <label for="font-heading16">Oxygen</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading17" value="Poppins" type="radio">
+                        <label for="font-heading17">Poppins</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading18" value="Questrial" type="radio">
+                        <label for="font-heading18">Questrial</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading19" value="Roboto" type="radio">
+                        <label for="font-heading19">Roboto</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-headings" id="font-heading20" value="Varela Round" type="radio">
+                        <label for="font-heading20">Varela Round</label>
+                    </fieldset>
+                </section>
             </form>
-            <form id="font-picker-labels" class="font-picker font-picker--labels">
+            <form id="option-picker-labels" class="option-picker option-picker--labels">
                 <header>
-                    <h2>Labels</h2>
+                    <h2>Label Options</h2>
                 </header>
-                <fieldset class="weight-picker">
-                    <label for="weight-picker-labels">Weight</label>
-                    <select name="weight-picker-labels" id="weight-picker-labels">
-                        <option value="400">Normal</option>
-                        <option value="500">Medium</option>
-                        <option value="600">Semi-bold</option>
-                        <option value="700" selected="selected">Bold</option>
-                    </select>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-labels" id="font-picker-label1" value="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';" type="radio" checked="checked">
-                    <label for="font-picker-label1">System</label>
-                </fieldset>
-                <fieldset class="font-picker">
-                    <input name="font-picker-labels" id="font-picker-label2" value="Montserrat" type="radio">
-                    <label for="font-picker-label2">Montserrat</label>
-                </fieldset>
+                <section class="option-wrapper option-wrapper--weight">
+                    <fieldset class="option-group option-group--weight">
+                        <label for="weight-labels">Weight</label>
+                        <select name="weight-labels" id="weight-labels">
+                            <option value="400">Normal</option>
+                            <option value="500">Medium</option>
+                            <option value="600">Semi-bold</option>
+                            <option value="700" selected="selected">Bold</option>
+                        </select>
+                    </fieldset>
+                </section>
+                <section class="option-wrapper option-wrapper--font">
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label1" value="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';" type="radio" checked="checked">
+                        <label for="font-label1">System</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label2" value="Archivo" type="radio">
+                        <label for="font-label2">Archivo</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label3" value="Arimo" type="radio">
+                        <label for="font-label3">Arimo</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label4" value="Heebo" type="radio">
+                        <label for="font-label4">Heebo</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label5" value="Hind" type="radio">
+                        <label for="font-label5">Hind</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label6" value="IBM Plex Sans" type="radio">
+                        <label for="font-label6">IBM Plex Sans</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label7" value="Khula" type="radio">
+                        <label for="font-label7">Khula</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label8" value="Lato" type="radio">
+                        <label for="font-label8">Lato</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label9" value="Montserrat" type="radio">
+                        <label for="font-label9">Montserrat</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label10" value="Muli" type="radio">
+                        <label for="font-label10">Muli</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label11" value="Nanum Gothic" type="radio">
+                        <label for="font-label11">Nanum Gothic</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label12" value="Noto Sans" type="radio">
+                        <label for="font-label12">Noto Sans</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label13" value="Noto Sans SC" type="radio">
+                        <label for="font-label13">Noto Sans SC</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label14" value="Nunito" type="radio">
+                        <label for="font-label14">Nunito</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label15" value="Open Sans" type="radio">
+                        <label for="font-label15">Open Sans</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label16" value="Oxygen" type="radio">
+                        <label for="font-label16">Oxygen</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label17" value="Poppins" type="radio">
+                        <label for="font-label17">Poppins</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label18" value="Questrial" type="radio">
+                        <label for="font-label18">Questrial</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label19" value="Roboto" type="radio">
+                        <label for="font-label19">Roboto</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-labels" id="font-label20" value="Varela Round" type="radio">
+                        <label for="font-label20">Varela Round</label>
+                    </fieldset>
+                </section>
             </form>
-            <form id="font-picker-body" class="font-picker font-picker--body">
+            <form id="option-picker-body" class="option-picker option-picker--body">
                 <header>
-                    <h2>Body</h2>
+                    <h2>Body Options</h2>
                 </header>
-                <fieldset class="weight-picker__input">
-                    <label for="weight-picker-body">Weight</label>
-                    <select name="weight-picker-body" id="weight-picker-body">
-                        <option value="400" selected="selected">Normal</option>
-                        <option value="500">Medium</option>
-                        <option value="600">Semi-bold</option>
-                        <option value="700">Bold</option>
-                    </select>
-                </fieldset>
-                <fieldset class="font-picker__inputs">
-                    <input name="font-picker-body" id="font-picker-body1" value="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';" type="radio" checked="checked">
-                    <label for="font-picker-body1">System</label>
-                </fieldset>
-                <fieldset class="font-picker__inputs">
-                    <input name="font-picker-body" id="font-picker-body2" value="Montserrat" type="radio">
-                    <label for="font-picker-body2">Montserrat</label>
-                </fieldset>
+                <section class="option-wrapper option-wrapper--weight">
+                    <fieldset class="option-group option-group--weight">
+                        <label for="weight-body">Weight</label>
+                        <select name="weight-body" id="weight-body">
+                            <option value="400">Normal</option>
+                            <option value="500">Medium</option>
+                            <option value="600">Semi-bold</option>
+                            <option value="700" selected="selected">Bold</option>
+                        </select>
+                    </fieldset>
+                </section>
+                <section class="option-wrapper option-wrapper--font">
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body1" value="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';" type="radio" checked="checked">
+                        <label for="font-body1">System</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body2" value="Archivo" type="radio">
+                        <label for="font-body2">Archivo</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body3" value="Arimo" type="radio">
+                        <label for="font-body3">Arimo</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body4" value="Heebo" type="radio">
+                        <label for="font-body4">Heebo</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body5" value="Hind" type="radio">
+                        <label for="font-body5">Hind</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body6" value="IBM Plex Sans" type="radio">
+                        <label for="font-body6">IBM Plex Sans</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body7" value="Khula" type="radio">
+                        <label for="font-body7">Khula</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body8" value="Lato" type="radio">
+                        <label for="font-body8">Lato</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body9" value="Montserrat" type="radio">
+                        <label for="font-body9">Montserrat</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body10" value="Muli" type="radio">
+                        <label for="font-body10">Muli</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body11" value="Nanum Gothic" type="radio">
+                        <label for="font-body11">Nanum Gothic</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body12" value="Noto Sans" type="radio">
+                        <label for="font-body12">Noto Sans</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body13" value="Noto Sans SC" type="radio">
+                        <label for="font-body13">Noto Sans SC</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body14" value="Nunito" type="radio">
+                        <label for="font-body14">Nunito</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body15" value="Open Sans" type="radio">
+                        <label for="font-body15">Open Sans</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body16" value="Oxygen" type="radio">
+                        <label for="font-body16">Oxygen</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body17" value="Poppins" type="radio">
+                        <label for="font-body17">Poppins</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body18" value="Questrial" type="radio">
+                        <label for="font-body18">Questrial</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body19" value="Roboto" type="radio">
+                        <label for="font-body19">Roboto</label>
+                    </fieldset>
+                    <fieldset class="option-group option-group--font option-group--pill-toggle">
+                        <input class="option-group__radio" name="font-body" id="font-body20" value="Varela Round" type="radio">
+                        <label for="font-body20">Varela Round</label>
+                    </fieldset>
+                </section>
             </form>
         </nav>
-        <section class="example">
-            <section class="example__typography">
+    </header>
+    <main>
+        <section class="example example--typography">
+            <header class="example__header">
+                <h3>Typography</h3>
+            </header>
+            <section class="example__display">
                 <h1>The quick brown fox</h1>
                 <h2>The quick brown fox</h2>
                 <h3>The quick brown fox</h3>
@@ -173,9 +329,24 @@
                 <p>The quick brown fox</p>
             </section>
         </section>
+        <section class="example example--paragraph">
+            <header class="example__header">
+                <h3>Paragraph</h3>
+            </header>
+            <section class="example__display">
+                <h1>The quick brown fox</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h2>The quick brown fox</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae et nesciunt aliquid, explicabo doloremque, maiores iure hic qui ducimus necessitatibus harum, esse autem reiciendis ipsa sint accusantium id culpa. Placeat.</p>
+                <h3>The quick brown fox</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptate iusto magnam architecto aperiam inventore molestias, magni ipsam corporis atque perferendis suscipit, natus quaerat, minus vero est rem nemo enim.</p>
+                <h4>The quick brown fox</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere temporibus doloremque fugit, suscipit provident ea eum commodi atque distinctio veritatis aspernatur labore sed voluptas quae autem voluptates voluptatum natus. Consectetur.</p>
+            </section>
+        </section>
     </main>
-
     <!-- Scripts -->
     <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>

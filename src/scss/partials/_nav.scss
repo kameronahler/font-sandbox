@@ -1,0 +1,104 @@
+// nav
+.site-banner{
+	background: $color-nav-bg;
+
+	@include bp(sm){
+		max-height:300px;
+		overflow:auto;
+	}
+
+	h1, h2, label{
+		color: $color-text--light;
+		text-align:center;		
+	}
+
+	h1{
+		margin-top: 0;
+	}
+}
+
+// all forms within nav
+.option-picker{
+	margin-bottom: 3rem;
+}
+
+
+// all forms within nav - control area
+.option-wrapper {	
+	@include bp(sm){
+		display: flex;
+	    flex: 0 1 1;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    align-items: center;
+	}
+}
+
+// all forms within nav - all input groups
+.option-group {
+    padding: 0;
+    border: initial;
+	margin: 0;
+}
+
+
+ // all forms within nav - weight selects
+ .option-group--weight{
+ 	text-align:center
+ }
+
+
+// all forms within nav - pill toggle fieldsets
+.option-group--pill-toggle {
+	@include bp(sm){
+		margin: 1rem 0;
+	}
+
+	@include bp(sm){
+		margin: 0 1rem 0 0;
+		margin-bottom: 1rem;
+	}
+
+	// all forms within nav - pill toggle input and label
+    .option-group__radio {
+    	display: block;
+        @include hide--accessible;
+
+		// button styling
+        & ~ label {
+        	display: block;
+	        padding: 1rem 2rem;
+	        font-weight: 700;
+
+	        @include bp(max-xs){
+		        border-bottom: 1px solid rgba(white, .05);
+	        }
+
+			@include bp(sm){
+		        padding: .25rem 1rem;
+		        border-radius: 99em;
+		        background: $color-pill--inactive;
+		        color: rgba(black, .9);
+			}
+
+        	&:hover{
+    			cursor: pointer;
+	        	transition: .3s ease background;
+
+    			@include bp(sm){
+    				background: darken($color-pill--inactive, 10%);
+    			}
+    		}
+        }
+    }
+
+    // all forms within nav - ACTIVE pill toggle input and label
+    .option-group__radio:checked {
+		
+		// button styling
+        & ~ label {
+            background: $gradient-pill--active;
+            color: $color-text--light
+        }
+    }
+}

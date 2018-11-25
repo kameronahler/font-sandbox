@@ -1,0 +1,28 @@
+// example header
+.example__header{
+    text-align: center;
+}
+
+
+// examples sections
+.example__display {
+    margin-bottom: 3rem;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: var(--font-family-headings);
+        font-weight: var(--font-weight-headings);
+    }
+
+    label {
+        font-family: var(--font-family-labels);
+        font-weight: var(--font-weight-labels);
+    }
+
+    p {
+        font-family: var(--font-family-body);
+        font-weight: var(--font-weight-body);
+    }
+}
