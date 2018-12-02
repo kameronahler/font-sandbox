@@ -1,102 +1,152 @@
 // nav
-.site-banner{
-	background: $color-nav-bg;
+.site-banner {
 
-	@include bp(sm){
-		max-height:300px;
-		overflow:auto;
-	}
+    @include bp(sm) {
+        overflow: auto;
+        background: $color-nav-bg;
+        padding: 2rem 0;
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+    }
 
-	h1, h2, label{
-		color: $color-text--light;
-		text-align:center;		
-	}
+    h1,
+    h2,
+    label {
+        color: $color-text--dark;
+    }
 
-	h1{
-		margin-top: 0;
+    h1,
+    h2 {
+        margin-top: 0;
+		
+	    @include bp(sm){
+	        text-align:center;
+	    }
 	}
 }
 
+
+// nav
+.navigation {
+    @include bp(sm) {
+        display:flex;
+    }
+}
+
 // all forms within nav
-.option-picker{
-	margin-bottom: 3rem;
+.option-picker {
+    margin-bottom: 3rem;
+
+    @include bp(sm) {
+        width: 33.3334%;
+        padding: 1rem;
+        margin-bottom: initial;
+		display:flex;
+		flex-direction: column;
+    }
 }
 
 
 // all forms within nav - control area
-.option-wrapper {	
-	@include bp(sm){
-		display: flex;
-	    flex: 0 1 1;
-	    flex-wrap: wrap;
-	    justify-content: center;
-	    align-items: center;
-	}
+.option-wrapper {
+    @include bp(sm) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &--weight,
+    &--size {
+        margin-bottom: 1rem;
+    }
+
+    &--font {
+    	@include bp(sm){
+    		background: white;
+	        box-shadow: 0 1px 4px -1px rgba(black,.1);
+	        height: 200px;
+	        display:grid;
+	        grid-template-columns: minmax(auto,max-content) minmax(auto,max-content);
+	        text-align: center;
+	        overflow:auto;
+	        border:1rem solid white;
+			border-radius: $border-radius;
+			margin-top: auto;
+    	}
+    }
 }
 
 // all forms within nav - all input groups
 .option-group {
     padding: 0;
     border: initial;
-	margin: 0;
+    margin: 0;
+
+    &--weight,
+    &--size{
+        @include bp(sm){
+        	width:100%;
+	        text-align:center;
+        }
+    }
+
+    &--font{
+	    &:nth-last-child(-n+2){
+	    	@include bp(sm){
+	    		margin-bottom:0;
+	    	}
+	    }
+    }
 }
-
-
- // all forms within nav - weight selects
- .option-group--weight{
- 	text-align:center
- }
 
 
 // all forms within nav - pill toggle fieldsets
 .option-group--pill-toggle {
-	@include bp(sm){
-		margin: 1rem 0;
-	}
 
-	@include bp(sm){
-		margin: 0 1rem 0 0;
-		margin-bottom: 1rem;
-	}
+    @include bp(sm) {
+        margin: 0 0 1rem 0;
+    }
 
-	// all forms within nav - pill toggle input and label
+    // all forms within nav - pill toggle input and label
     .option-group__radio {
-    	display: block;
+        display: block;
         @include hide--accessible;
 
-		// button styling
+        // button styling
         & ~ label {
-        	display: block;
-	        padding: 1rem 2rem;
-	        font-weight: 700;
+            display: block;
+            padding: 1rem 2rem;
+            font-weight: 700;
 
-	        @include bp(max-xs){
-		        border-bottom: 1px solid rgba(white, .05);
-	        }
+            @include bp(max-xs) {
+                border-bottom: 1px solid rgba(black, .05);
+            }
 
-			@include bp(sm){
-		        padding: .25rem 1rem;
-		        border-radius: 99em;
-		        background: $color-pill--inactive;
-		        color: rgba(black, .9);
-			}
+            @include bp(sm) {
+            	display:inline-block;
+                padding: .5rem 1rem;
+                border-radius: 99em;
+                background: $color-pill--inactive;
+                color: rgba(black, .9);
+            }
 
-        	&:hover{
-    			cursor: pointer;
-	        	transition: .3s ease background;
+            &:hover {
+                cursor: pointer;
+                transition: .3s ease background;
 
-    			@include bp(sm){
-    				background: darken($color-pill--inactive, 10%);
-    			}
-    		}
+                @include bp(sm) {
+                    background: darken($color-pill--inactive, 10%);
+                }
+            }
         }
     }
 
     // all forms within nav - ACTIVE pill toggle input and label
     .option-group__radio:checked {
-		
-		// button styling
-        & ~ label {
+
+        // button styling
+        &~label {
             background: $gradient-pill--active;
             color: $color-text--light
         }

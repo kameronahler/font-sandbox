@@ -1,3 +1,10 @@
+// example sections
+.example{
+    @include bp(sm){
+        padding: 2rem;
+    }
+}
+
 // example header
 .example__header{
     text-align: center;
@@ -24,5 +31,6 @@
     p {
         font-family: var(--font-family-body);
         font-weight: var(--font-weight-body);
+        font-size: var(--font-size-body);
     }
 }
